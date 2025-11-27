@@ -1,0 +1,101 @@
+
+.main-header {
+  background-color: var(--surface-color); 
+  box-shadow: var(--shadow-lg); 
+  padding: 1rem 0;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 1rem;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-grow: 1; 
+  justify-content: center;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-dark);
+  background-color: var(--background-color);
+}
+
+.nav-link.active {
+  color: var(--primary-color);
+  font-weight: 700;
+  border-bottom: 2px solid var(--primary-color);
+  background-color: var(--primary-light); 
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.header-logout-btn {
+  
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.header-back-btn {
+  
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 1rem;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .user-info {
+    text-align: center;
+  }
+}

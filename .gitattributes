@@ -1,0 +1,28 @@
+# Força final de linha LF (recomendado para projetos JS/React/Node)
+* text=auto eol=lf
+
+# Trata arquivos de código como texto
+*.js     text
+*.jsx    text
+*.ts     text
+*.tsx    text
+*.json   text
+*.md     text
+*.html   text
+*.css    text
+*.env.example text
+*.yml    text
+*.yaml   text
+
+# Impede o Git de tratar imagens como texto
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.svg    binary
+
+# Impede problemas em arquivos de fonte
+*.ttf    binary
+*.woff   binary
+*.woff2  binary
